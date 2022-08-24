@@ -76,7 +76,7 @@
     </v-navigation-drawer>
     <v-main>
       <div class="px-10 py-5">
-        <slot />
+        <Nuxt />
       </div>
     </v-main>
     <v-footer

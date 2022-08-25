@@ -1,13 +1,11 @@
-import colors from 'vuetify/es5/util/colors'
-
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - edm',
-    title: 'edm',
+    titleTemplate: '%s - Edmachina',
+    title: 'Edmachina',
     htmlAttrs: {
       lang: 'en'
     },

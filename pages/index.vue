@@ -155,6 +155,9 @@
 <script>
 export default {
   name: "ReportsView",
+  head: () => ({
+    title: "My Reports"
+  }),
   data: () => ({
     activeFilters: [],
     showFilters: true,

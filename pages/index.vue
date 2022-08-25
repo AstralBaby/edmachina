@@ -13,8 +13,8 @@
       >
         My Report
       </h1>
-      <v-icon class="ml-md-10">mdi-file-multiple-outline</v-icon>
-      <v-icon class="ml-5 ml-md-8">mdi-share-variant</v-icon>
+      <v-icon class="ml-md-10">content_copy</v-icon>
+      <v-icon class="ml-5 ml-md-8">share</v-icon>
       <v-spacer />
       <v-expand-x-transition>
         <v-chip-group v-show="showFilters && !$vuetify.breakpoint.smAndDown">
@@ -41,13 +41,13 @@
         class="ml-1 pa-4 transparent"
         color="primary"
       >
-        mdi-filter
+        filter_alt
       </v-icon>
-      <v-icon class="ml-1 pa-4">mdi-view-dashboard</v-icon>
+      <v-icon class="ml-1 pa-4">dashboard</v-icon>
       <v-menu
         offset-y
         left
-        content-class="rounded-lg elevation-0 rounded-tr-0 background lighten-2 attached-menu__shadow"
+        content-class="rounded-lg rounded-tr-0 background lighten-2 attached-menu__shadow"
       >
         <template #activator="{ on, value }">
           <div v-on="on">
@@ -55,7 +55,7 @@
               class="ml-1 pa-4 rounded-lg cursor-pointer"
               :class="{ 'background lighten-1 rounded-b-0': value }"
             >
-              mdi-view-dashboard-edit-outline
+              app_registration
             </v-icon>
           </div>
         </template>
@@ -63,7 +63,7 @@
           <v-list>
             <v-list-item>
               <v-list-item-avatar size="22">
-                <v-icon>mdi-download</v-icon>
+                <v-icon>download</v-icon>
               </v-list-item-avatar>
               <v-list-item-content>
                 <v-list-item-title> Export Report </v-list-item-title>
@@ -71,7 +71,7 @@
             </v-list-item>
             <v-list-item>
               <v-list-item-avatar size="22">
-                <v-icon>mdi-share-variant</v-icon>
+                <v-icon>share</v-icon>
               </v-list-item-avatar>
               <v-list-item-content>
                 <v-list-item-title> Share Report </v-list-item-title>
@@ -79,7 +79,7 @@
             </v-list-item>
             <v-list-item>
               <v-list-item-avatar size="22">
-                <v-icon>mdi-tune</v-icon>
+                <v-icon>tune</v-icon>
               </v-list-item-avatar>
               <v-list-item-content>
                 <v-list-item-title> Report Settings </v-list-item-title>
@@ -87,7 +87,7 @@
             </v-list-item>
             <v-list-item>
               <v-list-item-avatar size="22">
-                <v-icon>mdi-clock-time-four-outline</v-icon>
+                <v-icon>schedule</v-icon>
               </v-list-item-avatar>
               <v-list-item-content>
                 <v-list-item-title> Schedule Report </v-list-item-title>
@@ -95,7 +95,7 @@
             </v-list-item>
             <v-list-item>
               <v-list-item-avatar size="22">
-                <v-icon>mdi-view-dashboard</v-icon>
+                <v-icon>dashboard</v-icon>
               </v-list-item-avatar>
               <v-list-item-content>
                 <v-list-item-title> Edit Report </v-list-item-title>
@@ -103,7 +103,7 @@
             </v-list-item>
             <v-list-item>
               <v-list-item-avatar size="22">
-                <v-icon>mdi-pin</v-icon>
+                <v-icon>push_pin</v-icon>
               </v-list-item-avatar>
               <v-list-item-content>
                 <v-list-item-title> Pin Report </v-list-item-title>
@@ -112,7 +112,7 @@
             <v-divider />
             <v-list-item>
               <v-list-item-avatar size="22">
-                <v-icon>mdi-chart-box-plus-outline</v-icon>
+                <v-icon>addchart</v-icon>
               </v-list-item-avatar>
               <v-list-item-content>
                 <v-list-item-title> New Report </v-list-item-title>
@@ -120,7 +120,7 @@
             </v-list-item>
             <v-list-item>
               <v-list-item-avatar size="22">
-                <v-icon>mdi-file-document</v-icon>
+                <v-icon>description</v-icon>
               </v-list-item-avatar>
               <v-list-item-content>
                 <v-list-item-title> My Reports </v-list-item-title>

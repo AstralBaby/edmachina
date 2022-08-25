@@ -7,27 +7,27 @@
       :color="$vuetify.theme.dark ? 'black' : 'primary'"
       elevation="0"
     >
-      <v-app-bar-nav-icon @click="showDrawer = !showDrawer" />
+      <v-app-bar-nav-icon @click="showDrawer = !showDrawer"  />
       <img
         src="@/assets/logo.svg"
         alt="Edmachina"
         class="mx-1 d-none d-md-inline"
       />
       <v-spacer />
-      <v-icon class="">mdi-magnify</v-icon>
+      <v-icon>search</v-icon>
       <v-icon
         @click="$vuetify.theme.dark = false"
         class="ml-4"
         v-if="$vuetify.theme.dark"
       >
-        mdi-white-balance-sunny
+        light_mode
       </v-icon>
-      <v-icon @click="$vuetify.theme.dark = true" class="ml-4" v-else
-        >mdi-weather-night</v-icon
-      >
-      <v-icon class="ml-4">mdi-cog</v-icon>
+      <v-icon @click="$vuetify.theme.dark = true" class="ml-4" v-else>
+        dark_mode
+      </v-icon>
+      <v-icon class="ml-4">settings</v-icon>
       <v-badge content="1" overlap color="red">
-        <v-icon class="ml-4">mdi-bell</v-icon>
+        <v-icon class="ml-4">notifications</v-icon>
       </v-badge>
       <user-menu :user="{ ...user, currentAccount, accounts }" />
     </v-app-bar>
@@ -65,8 +65,9 @@
                   :class="{
                     'white--text': currentNavItem === idx,
                   }"
-                  >{{ i.icon }}</v-icon
                 >
+                  {{ i.icon }}
+                </v-icon>
                 {{ i.label }}
               </v-list-item-title>
             </v-list-item-content>
@@ -103,36 +104,36 @@ export default {
     currentNavItem: 7,
     navItems: [
       {
-        icon: "mdi-home",
+        icon: "home",
         label: "Dashboard",
       },
       {
-        icon: "mdi-calendar-blank",
+        icon: "calendar_today",
         label: "Calendar",
       },
       {
-        icon: "mdi-format-list-bulleted",
+        icon: "list_alt",
         label: "Reports",
         type: "divider",
       },
       {
-        icon: "mdi-plus-box",
+        icon: "add_box",
         label: "Machina Hi",
       },
       {
-        icon: "mdi-arrow-top-right-thin-circle-outline",
+        icon: "outbound",
         label: "Heads Up",
       },
       {
-        icon: "mdi-cached",
+        icon: "loop",
         label: "Stay Around",
       },
       {
-        icon: "mdi-chart-box",
+        icon: "analytics",
         label: "Analytics",
       },
       {
-        icon: "mdi-poll",
+        icon: "leaderboard",
         label: "My Reports",
       },
     ],

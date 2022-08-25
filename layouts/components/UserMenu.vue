@@ -23,8 +23,8 @@
     <v-card>
       <v-list>
         <v-list-item>
-          <v-list-item-avatar size="20">
-            <v-icon>mdi-account</v-icon>
+          <v-list-item-avatar size="22">
+            <v-icon size="22">person</v-icon>
           </v-list-item-avatar>
           <v-list-item-content>
             <v-list-item-title> Profile </v-list-item-title>
@@ -42,9 +42,9 @@
                 <v-list-item-title class="font-weight-semibold primary--text">
                   {{ user.currentAccount.name }}
                 </v-list-item-title>
-                <v-list-item-subtitle>{{
-                  user.currentAccount.id
-                }}</v-list-item-subtitle>
+                <v-list-item-subtitle>
+                  {{ user.currentAccount.id }}
+                </v-list-item-subtitle>
               </v-list-item-content>
               <v-list-item-action>
                 <v-icon color="primary">mdi-chevron-right</v-icon>
@@ -73,15 +73,15 @@
         <v-divider />
         <v-list-item>
           <v-list-item-avatar size="22">
-            <v-icon>mdi-email</v-icon>
+            <v-icon size="22">email</v-icon>
           </v-list-item-avatar>
           <v-list-item-content>
             <v-list-item-title> Inbox </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-list-item>
-          <v-list-item-avatar size="20">
-            <v-icon>mdi-bell</v-icon>
+          <v-list-item-avatar size="22">
+            <v-icon size="22">notifications</v-icon>
           </v-list-item-avatar>
           <v-list-item-content>
             <v-list-item-title> Notifications </v-list-item-title>
@@ -89,8 +89,8 @@
         </v-list-item>
         <v-divider />
         <v-list-item>
-          <v-list-item-avatar size="20">
-            <v-icon>mdi-cog</v-icon>
+          <v-list-item-avatar size="22">
+            <v-icon size="22">settings</v-icon>
           </v-list-item-avatar>
           <v-list-item-content>
             <v-list-item-title> Account Settings </v-list-item-title>
@@ -98,16 +98,16 @@
         </v-list-item>
         <v-divider />
         <v-list-item>
-          <v-list-item-avatar size="20">
-            <v-icon>mdi-account</v-icon>
+          <v-list-item-avatar size="22">
+            <v-icon size="22">receipt</v-icon>
           </v-list-item-avatar>
           <v-list-item-content>
             <v-list-item-title> Billing </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-list-item>
-          <v-list-item-avatar size="20">
-            <v-icon>mdi-account</v-icon>
+          <v-list-item-avatar size="22">
+            <v-icon size="22">logout</v-icon>
           </v-list-item-avatar>
           <v-list-item-content>
             <v-list-item-title> Logout </v-list-item-title>

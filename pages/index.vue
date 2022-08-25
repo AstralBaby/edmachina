@@ -63,7 +63,7 @@
           <v-list>
             <v-list-item>
               <v-list-item-avatar size="22">
-                <v-icon>download</v-icon>
+                <v-icon size="21">download</v-icon>
               </v-list-item-avatar>
               <v-list-item-content>
                 <v-list-item-title> Export Report </v-list-item-title>
@@ -71,7 +71,7 @@
             </v-list-item>
             <v-list-item>
               <v-list-item-avatar size="22">
-                <v-icon>share</v-icon>
+                <v-icon size="21">share</v-icon>
               </v-list-item-avatar>
               <v-list-item-content>
                 <v-list-item-title> Share Report </v-list-item-title>
@@ -79,7 +79,7 @@
             </v-list-item>
             <v-list-item>
               <v-list-item-avatar size="22">
-                <v-icon>tune</v-icon>
+                <v-icon size="21">tune</v-icon>
               </v-list-item-avatar>
               <v-list-item-content>
                 <v-list-item-title> Report Settings </v-list-item-title>
@@ -87,7 +87,7 @@
             </v-list-item>
             <v-list-item>
               <v-list-item-avatar size="22">
-                <v-icon>schedule</v-icon>
+                <v-icon size="21">schedule</v-icon>
               </v-list-item-avatar>
               <v-list-item-content>
                 <v-list-item-title> Schedule Report </v-list-item-title>
@@ -95,7 +95,7 @@
             </v-list-item>
             <v-list-item>
               <v-list-item-avatar size="22">
-                <v-icon>dashboard</v-icon>
+                <v-icon size="21">dashboard</v-icon>
               </v-list-item-avatar>
               <v-list-item-content>
                 <v-list-item-title> Edit Report </v-list-item-title>
@@ -103,7 +103,7 @@
             </v-list-item>
             <v-list-item>
               <v-list-item-avatar size="22">
-                <v-icon>push_pin</v-icon>
+                <v-icon size="21">push_pin</v-icon>
               </v-list-item-avatar>
               <v-list-item-content>
                 <v-list-item-title> Pin Report </v-list-item-title>
@@ -112,7 +112,7 @@
             <v-divider />
             <v-list-item>
               <v-list-item-avatar size="22">
-                <v-icon>addchart</v-icon>
+                <v-icon size="21">addchart</v-icon>
               </v-list-item-avatar>
               <v-list-item-content>
                 <v-list-item-title> New Report </v-list-item-title>
@@ -120,7 +120,7 @@
             </v-list-item>
             <v-list-item>
               <v-list-item-avatar size="22">
-                <v-icon>description</v-icon>
+                <v-icon size="21">description</v-icon>
               </v-list-item-avatar>
               <v-list-item-content>
                 <v-list-item-title> My Reports </v-list-item-title>
@@ -140,7 +140,7 @@
         <v-sheet height="350" class="accent rounded" />
       </v-col>
     </v-row>
-    <h1 class="text-h5 white--text my-3">New Group</h1>
+    <h1 class="text-h5 my-3" :class="[$vuetify.theme.dark ? 'white--text' : 'primary--text']">New Group</h1>
     <v-row>
       <v-col sm="4">
         <v-sheet height="350" class="accent rounded" />
